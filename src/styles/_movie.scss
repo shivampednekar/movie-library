@@ -1,0 +1,91 @@
+.movieWrapper {
+  background-color: var(--color-light);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.3fr;
+  grid-template-rows: 0.3fr 0.2fr 1fr 0.3fr;
+  grid-template-areas:
+    'img    title      title'
+    'img    release   release'
+    'img    stack       stack'
+    'img    imdb       trailer';
+  grid-gap: 10px 50px;
+  margin-top: 3.6%;
+  padding: 5%;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.img {
+  grid-area: img;
+
+  & img {
+    height: 350px;
+    border-radius: 8px;
+  }
+}
+
+.title {
+  grid-area: title;
+  color: var(--color-dark);
+  font-size: 3.5rem;
+}
+
+.release {
+  grid-area: release;
+  color: var(--color-textHighlight);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.stack {
+  grid-area: stack;
+  color: var(--color-text);
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.imdb {
+  grid-area: imdb;
+}
+
+.trailer {
+  grid-area: trailer;
+}
+
+.imdb,
+.trailer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & button {
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+  }
+}
+
+.trailer_btn {
+  color: var(--color-textHighlight);
+  background-color: #095be6;
+  width: 100%;
+  height: auto;
+  padding: 0.7vw;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s all ease-in-out;
+}
+
+.imdb_btn {
+  background-color: #f4dd4f;
+  color: var(--color-dark);
+  width: 100%;
+  height: auto;
+  padding: 0.7vw;
+  border-radius: 5px;
+  text-align: center;
+}

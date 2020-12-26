@@ -1,0 +1,36 @@
+// TODO MIXINS
+@mixin bp-largest {
+  @media (max-width: 75em) {
+    @content;
+  }
+} //1200px
+
+@mixin bp-large {
+  @media (max-width: 68.75em) {
+    @content;
+  }
+} //1110px
+
+@mixin bp-medium {
+  @media (max-width: 56.25em) {
+    @content;
+  }
+} //900px
+
+@mixin bp-small {
+  @media (max-width: 37.5em) {
+    @content;
+  }
+} //600px
+
+@mixin bp-smallest {
+  @media (max-width: 31.5em) {
+    @content;
+  }
+} //500px
+
+@mixin bp-tiny {
+  @media (max-width: 21.75em) {
+    @content;
+  }
+} //348px

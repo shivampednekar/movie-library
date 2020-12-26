@@ -1,0 +1,98 @@
+.darkmode {
+  position: absolute;
+  // top: 2rem;
+  // left: 163rem;
+  top: 1.3rem;
+  left: 1.3rem;
+  display: flex;
+  align-items: center;
+
+  &__text {
+    margin-right: 1rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+
+  & label {
+    width: 50px;
+    height: 25px;
+    background: grey;
+    display: block;
+    position: relative;
+    text-indent: -9999px;
+    border-radius: 100px;
+    cursor: pointer;
+
+    @media only screen and (max-width: 56.25em) {
+      width: 40px;
+      height: 20px;
+    }
+
+    @media only screen and (max-width: 31.25em) {
+      width: 30px;
+      height: 18px;
+    }
+
+    &::after {
+      content: '';
+      width: 17px;
+      height: 17px;
+      background: #fff;
+      position: absolute;
+      top: 4px;
+      left: 5px;
+      border-radius: 90px;
+      transition: all 0.2s;
+
+      @media only screen and (max-width: 56.25em) {
+        top: 3px;
+        left: 3px;
+        width: 14px;
+        height: 14px;
+      }
+
+      @media only screen and (max-width: 31.5em) {
+        top: 4px;
+        left: 3px;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 31.5em) {
+    top: 2rem;
+    left: 1.6rem;
+  }
+}
+
+.switch[type='checkbox'] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.switch:checked + label {
+  background: var(--color-primary);
+}
+
+.switch:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+
+  @media only screen and (max-width: 31.5em) {
+    left: calc(100% - 3px);
+  }
+}
+
+label:active:after {
+  width: 40px;
+
+  @media only screen and (max-width: 56.25em) {
+    width: 35px;
+  }
+
+  @media only screen and (max-width: 31.5em) {
+    width: 20px;
+  }
+}

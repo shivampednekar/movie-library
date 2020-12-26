@@ -1,0 +1,37 @@
+// IMPORTS
+@import './base';
+@import './darkModeToogle';
+@import './search';
+@import './movie';
+
+// RESET
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10px*/
+}
+
+/* Removing the focus when clicking the input field */
+input,
+textarea,
+select,
+a {
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.submit-btn {
+  display: none;
+}

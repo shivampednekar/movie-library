@@ -1,0 +1,47 @@
+body {
+  background-color: var(--background-color);
+  color: var(--color-dark);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: background 0.3s, color 0.3s;
+  --background-color: rgb(250, 250, 250);
+  --color-primary: #8352fd;
+  --color-light: #ffffff;
+  --color-dark: #070707; //212529
+  --color-text: #575757;
+  --color-textHighlight: #333333;
+}
+
+body.dark-mode {
+  --background-color: #212121;
+  --color-primary: #3913b8;
+  --color-light: rgb(53, 53, 53);
+  --color-dark: #f2f2f2;
+  --color-text: #dadada;
+  --color-textHighlight: #f0f0f0;
+}
+
+button {
+  outline: none;
+  border: none;
+  color: var(--color-light);
+  cursor: pointer;
+}
+
+.Wrapper {
+  height: auto;
+  padding: 0;
+  margin: 3% 10%;
+
+  @media only screen and (max-width: 31.5em) {
+    margin: 3% 2%;
+  }
+}
+
+.Heading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
