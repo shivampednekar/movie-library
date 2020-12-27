@@ -8,9 +8,10 @@
   align-items: center;
 
   &__text {
-    margin-right: 1rem;
+    color: var(--color-textHighlight);
     font-weight: 700;
     font-size: 1.2rem;
+    margin-right: 1rem;
   }
 
   & label {
